@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#DDCBF2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETALLES"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/editIdAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="ID de Actividad"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción:"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/resDesc"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Captura:"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/resCaptura"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Entrega:"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/resEntrega"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evidencias asociadas:"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ListView
+        android:id="@+id/listaEvidencias"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/actividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IR A ACTIVIDADES"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/evidencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGREGAR EVIDENCIA"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
